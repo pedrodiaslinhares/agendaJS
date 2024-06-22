@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda</title>
+    <link rel="stylesheet" href="assets/global.css">
+    <link rel="stylesheet" href="assets/agenda.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <p>Bem vindo a sua agenda !</p>
+        </header>
+
+        <section id="principal">
+            <section id="formulario">
+                <section id="cadAgenda">
+                    <section id="sectionNome" class="fields">
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" oninput="verificarInputs()">
+                    </section>
+                    <section id="sectionSobrenome" class="fields">
+                        <label for="sobrenome">Sobrenome</label>
+                        <input type="text" name="sobrenome" id="sobrenome"  oninput="verificarInputs()">
+                    </section>
+                    <section id="sectionEndereço" class="fields">
+                        <label for="endereco">Endereço</label>
+                        <input type="text" name="endereco" id="endereco"  oninput="verificarInputs()">
+                    </section>
+                    <section id="sectionTelefone" class="fields">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" name="telefone" id="telefone"  oninput="verificarInputs()">
+                    </section> 
+            </section>
+            <section id="btBusca">
+                <button class="btBusca" onclick="primeira()" >|<</button>
+                <button class="btBusca" onclick="recua()" ><</button>
+                <button class="btBusca" onclick="avanca()" >></button>
+                <button class="btBusca" onclick="ultima()" >>|</button>
+            </section>
+        </section>
+        
+            <section id="botoes">   
+                <button id="btIncluir" class="botaoVerde" onclick="incluir()">Incluir</button>
+                <button id="btEditar" class="botaoLaranja " onclick="editar()" disabled>Editar</button>
+                <button id="btSalvar" class="botaoAzul" onclick="salvar()" disabled>Salvar</button>
+                <button id="btCancelar" class="botaoBranco" onclick="cancelar()" disabled>Cancelar</button>
+                <button id="btExcluir" class="botaoVermelho" onclick="excluir()" disabled>Excluir</button>
+        </section>
+        
+        </section>
+        
+</main>
+    <script src="assets/script.js"></script>
+</body>
+</html>

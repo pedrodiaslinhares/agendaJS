@@ -1,0 +1,135 @@
+main{
+    background-color: #FFFFFF;
+}
+
+#formulario{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 450px;
+    padding: 10px;
+}
+
+#cadAgenda{
+    display: grid;
+    grid-template-areas:"nome sobrenome"
+                        "endereco endereco"
+                        "telefone telefone";              
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: calc(100% - 20px);
+    background-color: #D9D9D9;
+    padding: 10px;
+}
+
+#principal{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#botoes{
+    /*display: grid;*/
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+#btBusca {
+    margin-top: 3px;
+}
+#botoes > button:hover{
+    background-color: rgb(24, 25, 37);
+}
+.btDisable {
+    background-color: #797474 !important;
+    border: solid 1px black;
+}
+
+
+#principal #botoes button {
+    width: 95px;
+    height: 35px;
+    border: 0px;
+    font-size: 15px;
+}
+
+.botaoVerde {
+    background-color: green;
+    color: #FFFFFF;
+}
+
+.botaoLaranja{
+    background-color: orange;
+    color: #FFFFFF;
+}
+
+.botaoAzul{
+    background-color: #04C9F4;
+    color: #FFFFFF;
+}
+
+.botaoVermelho{
+    background-color: #F40404;
+    color: #000;
+}
+
+.botaoBranco{
+    background-color: #FFFFFF;
+    color: #04C9F4;
+}
+
+.btBusca {
+    background-color: #000;
+    color: #FFFFFF;
+    height: 40px;
+    width: 70px;
+    border: none;
+    margin: 3px;
+}
+
+
+#cadAgenda label{
+    color: #1a1919;
+    font-size: 15px;
+}
+
+#sectionNome{
+    grid-area: nome;
+}
+
+#sectionSobrenome{
+    grid-area: sobrenome;
+    padding-left: 5px;
+}
+
+#sectionEndereço{
+    grid-area: endereco;
+}
+
+#sectionTelefone{
+    grid-area: telefone;
+    width: 50%;
+}
+
+input{
+    height: 38px;
+    font-size: large;
+}
+
+.fields{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 900px){
+    #formulario{
+        width: 90vw;
+    }
+    
+    #principal{
+        display: flex;
+       align-items: center;
+    }
+}
